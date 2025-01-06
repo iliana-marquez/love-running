@@ -6,8 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* so that later when we set the height or width to an element, it will be applied to the entire element, including the border 
-  */
+    /* so that later when we set the height or width to an element, it will be applied to the entire element, including the border */
 }
 
 /* General Stlyes */
@@ -22,7 +21,16 @@ body {
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    /* The first mandatory value is the horizontal offset: Negative values offset this to the left, positive ones to the right of the element. A + value will display the shadow below the element, a - value above.
+    The second mandatory value is the vertical offset. 
+    The third value sets the blur
+    The fourth is the color value or default black */
 }
 
 h1 {
