@@ -1,7 +1,7 @@
 /* Google-Fonts Import */ 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
-/* Asterisk wildcar selector to override default styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Leto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3 {
@@ -107,7 +107,7 @@ main {
 
 #cover-text {
     /* Final rgba sets the opacity so it's semitransparent*/
-    background-color: rgb(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -120,6 +120,39 @@ main {
 #cover-text > h2,
 #cover-text > h3 {
    color: #ffffff; 
+}
+
+/* Reasons Section */
+#reasons {
+    margin: 20px auto;
+    width: 90%;
+
+}
+
+#reasons > h2 {
+    font-size: 280%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#benefits {
+    margin-top: 20px;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 }
 
 /* Footer */
@@ -141,7 +174,7 @@ main {
 
 /* Media queries */
 
-/* Media query: tablets and lager (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */ 
     nav {
@@ -171,6 +204,7 @@ main {
     }
 
     /* Main content */
+    /* Push main content down to accommodate larger header */
     main {
         margin-top: 79px;
     }
@@ -182,7 +216,7 @@ main {
     }
 }
 
-/* Media query: desktop and lager (992px and up) */
+/* Media query: larger devices, desktops and laptops (992px and up) */
 @media screen and (min-width: 992px) {
     /* Header */ 
     #menu a:hover {
