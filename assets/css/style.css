@@ -31,6 +31,9 @@ header {
     The second mandatory value is the vertical offset. 
     The third value sets the blur
     The fourth is the color value or default black */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -70,8 +73,23 @@ It is positioned relative to the nearest positioned ancestor in our case, the he
     box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
     display: none;
+    top: 100%; /* element that the top of the element should start at the bottom of its parent.
+    0% would represent the top of the parent, and 100% represents the bottom of it.*/
 }
 
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/* hide the checkbox */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 /* Main Content */
 main {
     background-color: lightblue;
