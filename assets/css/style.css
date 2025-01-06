@@ -26,6 +26,11 @@ h1, h2, h3 {
     color: #252525;
 }
 
+/* Created a generic class to hide elements that need to be there for seo */
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
