@@ -171,6 +171,15 @@ main {
     max-height: 300px;
 }
 
+/* Meetups Section */
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center / cover;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
 /* Footer */
 #social-networks {
     text-align: center;
